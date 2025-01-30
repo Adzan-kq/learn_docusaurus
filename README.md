@@ -37,3 +37,22 @@ $ yarn build
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 
+## How To Install Bootstrap in project docusaurus
+
+Instalasi bootstrap
+```
+$ npm install bootstrap
+```
+
+Import Bootstrap to <strong>custom.css</strong>
+```
+@import "bootstrap/dist/css/bootstrap.min.css";
+```
+
+Don't Forget to update <strong>docusaurus.config.ts</strong> ,  if you use javascript config.js
+```
+theme: {
+  customCss: require.resolve('./src/css/custom.css'),
+}
+```
+
